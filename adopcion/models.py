@@ -11,5 +11,5 @@ class Persona(models.Model):
     domicilio = models.TextField()
 
     def __str__(self):
-        return self.nombre + ' ' + self.apellidos
+        return '{} {}'.format(self.nombre, self.apellidos)
     

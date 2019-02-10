@@ -8,11 +8,11 @@ class Vacuna(models.Model):
     nombre = models.CharField(max_length=50)
 
     def __str__(self):
-        return self.nombre
+        return '{}'.format(self.nombre)
 
 
 class Mascota(models.Model):
-    folio = models.CharField(max_length=10, primary_key=True)
+    folio = models.CharField(max_length=10)
     nombre = models.CharField(max_length=50)
     sexo   = models.CharField(max_length=10)
     edad_aproximada = models.IntegerField()
@@ -22,6 +22,6 @@ class Mascota(models.Model):
     vacuna = models.ManyToManyField(Vacuna, blank=True)
 
     def __str__(self):
-        return self.nombre
+        return '{}'.format(self.nombre)
 
 
