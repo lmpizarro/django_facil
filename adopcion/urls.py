@@ -1,12 +1,12 @@
 from django.urls import path
 
-from .views import index, solicitud_crear, solicitud_listar
+from .views import index, SolicitudCreate, solicitud_listar, SolicitudList
 
 app_name = 'adopcion'
 
 urlpatterns = [
     path('', index, name='index'),
-    path('crear', solicitud_crear, name='solicitud_crear'),
-    path('crear', solicitud_listar, name='solicitud_listar'),
+    path('solicitud/listar/', SolicitudList.as_view(), name='solicitud_listar'),
+    path('solicitud/nueva/', SolicitudCreate.as_view(), name='solicitud_crear'),
 
 ]

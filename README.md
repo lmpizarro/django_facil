@@ -53,3 +53,11 @@
 
 
 [bootswatch](https://bootswatch.com/)
+
+[Handling Multiple Forms on the Same Page in Django](https://www.codementor.io/lakshminp/handling-multiple-forms-on-the-same-page-in-django-fv89t2s3j)
+
+[Working with forms](https://docs.djangoproject.com/es/2.1/topics/forms/)
+
+[Two forms one view in django](https://krzysztofzuraw.com/blog/2016/two-forms-one-view-django.html)
+
+[How to Render Django Form Manually](https://simpleisbetterthancomplex.com/article/2017/08/19/how-to-render-django-form-manually.html)
